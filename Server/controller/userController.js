@@ -6,7 +6,7 @@ import asyncHandler from 'express-async-handler';
 
 // ! The async handler makes is possible to handle our errors without wrapping everything in Try-Catch
 const authUSer = asyncHandler(async (req, res) => {
-  res.status(200).json({ message: "success" });
+  res.status(200).json({ message: "Login Successful" });
 });
 
 
