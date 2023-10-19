@@ -10,5 +10,35 @@ const authUSer = asyncHandler(async (req, res) => {
 });
 
 
+//? @Register a new User
+//! @route ---POST/api/users  
+//* @access Public
+const registerUSer = asyncHandler(async (req, res) => {
+  res.status(200).json({ message: "Registration Successful" });
+});
 
-export { authUSer }
+
+//? @Auth Logout User
+//! @route ---POST/api/users/logout 
+//* @access Public
+const logOutUser = asyncHandler(async (req, res) => {
+  res.status(200).json({ message: "Logged Out" });
+});
+
+
+//? @Get User Profile
+//! @route ---GET/api/users/profile 
+//* @access Private
+const getUSerProfile = asyncHandler(async (req, res) => {
+  res.status(200).json({ message: "User Profile" });
+});
+
+
+//? @Auth User/set token
+//! @route ---PUT/api/users/profile 
+//* @access Private
+const updateUserProfile = asyncHandler(async (req, res) => {
+  res.status(200).json({ message: "Update Successful" });
+});
+
+export { authUSer, registerUSer, logOutUser, getUSerProfile, updateUserProfile }
