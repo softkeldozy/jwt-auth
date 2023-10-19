@@ -9,6 +9,11 @@ const port = process.env.PORT || 4000;
 connectDB();
 const app = express();
 
+// middleware
+app.use(express.json());
+//* for sending of form data
+app.use(express.urlencoded({ extended: true }));
+
 app.use('/api/users', userRoutes);
 
 // Error Handlers
