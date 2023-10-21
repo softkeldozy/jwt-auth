@@ -6,5 +6,8 @@
     "titleBar.activeBackground": "#820C3D",
     "titleBar.activeForeground": "#FFFCFD"
   },
-  "editor.acceptSuggestionOnEnter": "on"
+  "editor.acceptSuggestionOnEnter": "on",
+  "cSpell.ignoreWords": [
+    "Toastify"
+  ]
 }
