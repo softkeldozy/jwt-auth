@@ -1,4 +1,4 @@
-import { Container, Card, Button } from "react-bootstrap-v5";
+import { Container, Card, Button } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
 const Hero = () => {
@@ -13,11 +13,11 @@ const Hero = () => {
             speriores in ratione nisi vel doloremque velit earum aliquam rem!
           </p>
           <div className="d-flex">
-            <LinkContainer to={'/login'}>
-              <Button variant="primary href='/login" className="me-3">Sign In</Button>
+            <LinkContainer to='/login'>
+              <Button variant="primary" className="me-3">Sign In</Button>
             </LinkContainer>
-            <LinkContainer to={'/register'}>
-              <Button variant="secondary href='/register" className="me-3">Sign Up</Button>
+            <LinkContainer to='/register'>
+              <Button variant="secondary" className="me-3">Sign Up</Button>
             </LinkContainer>
           </div>
         </Card>

@@ -30,7 +30,7 @@ const LoginScreen = () => {
     try {
       const res = await login({ email, password }).unwrap();
       dispatch(setCredentials({ ...res }));
-      navigate('/')
+      navigate('/register')
     } catch (err) {
       toast.error(err?.data?.message || err.error);
     }
@@ -52,10 +52,9 @@ const LoginScreen = () => {
         <Button type='submit' variant='primary' className='mt-3' >
           Sign In
         </Button>
-
         <Row className="py-3">
           <Col>
-            No Account? <Link to="/register">Register</Link>
+            Don't have an account? <Link to="/register">Sign Up</Link>
           </Col>
         </Row>
       </Form>
