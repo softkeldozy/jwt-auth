@@ -81,7 +81,6 @@ const getUSerProfile = asyncHandler(async (req, res) => {
 //? @Put User Profile
 //! @route ---PUT/api/users/updateProfile 
 //* @access Private
-// TODO: Add functionality to handle logout upon profile update
 const updateUserProfile = asyncHandler(async (req, res) => {
   const user = await User.findById(req.user._id);
   if (user) {
